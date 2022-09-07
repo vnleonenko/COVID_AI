@@ -51,10 +51,42 @@ Sampling algorithm:
 2. From the file “households.txt” select the houses corresponding to the agent IDs selected in the first paragraph
 3. Similarly, from the “schools.json” file, select the schools that the agents attend.
 
-
 ### GPR for SEIRD-model
 
+The SEIRD model (Susceptible-Exposed-Infected-Recovered-Deceased) is the extended version of the SEIR model [7]. The populations’ dynamics is described by the following system of differential equations [8]:
+
+$$\begin{cases}
+      \dfrac{dS(t)}{dt}=\dfrac{-{\beta}S(t)I(t)}{N}\\
+      \dfrac{dE(t)}{dt}=\dfrac{-{\beta}S(t)I(t)}{N}-{\beta}E(t)\\
+      \dfrac{dI(t)}{dt}={\delta}E(t)-(\gamma+\mu)I(t)\\
+      \dfrac{dR(t)}{dt}={\gamma}I(t)\\
+      \dfrac{dD(t)}{dt}={\mu}I(t)
+    \end{cases}\,$$
+    
+where $S(t)$ – the number of susceptible individuals at time $t$;
+
+$I(t)$ – the number of infected individuals at time $t$;
+
+$R(t)$ – the number of recovered individuals at time $t$;
+
+$E(t)$ – the number of exposed individuals at time $t$;
+
+$E(t)$ – the number of dead individuals at time $t$;
+
+$\beta$ – effective contact rate;
+
+$\mu$ – mortality rate;
+
+$γ$ – recovery rate.
+
+
 ### GPR for ABM-model
+
+Multiagent models, also known as agent-based models (ABM), have some limitations despite all their advantages, in particular, high-level complexity of parameters, long execution time, and complexity of model analysis. As the complexity of agent-based models increases, the number of parameters required to be assessed on real data grows. Due to the presence of stochastic processes for model calibration, as well as a need for uncertainty and sensitivity analysis [5], it is necessary to conduct many simulation launches, which leads to increased time consumption.
+
+In this work an agent-based framework from [6] was used. The basic principle of simulation is as follows: each agent in the population potentially interacts with other agents if they attend the same school (for schoolchildren), workplace (for working age adults), or lives in the same household. The infectivity of each agent depends on their day of infection [4]. The modeling step of this model is equal to one day. Agents are randomly selected from the general population and are assigned an infectious status at the beginning of the simulation. Step by step algorithm is described in [4].
+The main input parameters of the model which are important for uncertainty and sensitivity analysis are introduced in Table 1.
+
 
 ### References
 [1] Sankaran, Sethuraman, and Alison L. Marsden. (2011) "A stochastic collocation method for uncertainty quantification and propagation in cardiovascular simulations." Journal of biomechanical engineering 133(3).
@@ -64,4 +96,13 @@ Sampling algorithm:
 [3] Rasmussen, Carl Edward. "Gaussian processes in machine learning." Summer school on machine learning. Springer, Berlin, Heidelberg, 2003.
 
 [4] Leonenko, Vasiliy, Sviatoslav Arzamastsev, and Georgiy Bobashev. (2020) "Contact patterns and influenza outbreaks in Russian cities: A proof-of-concept study via agent-based modeling." Journal of Computational Science 44: 101156.
+
+[5] Perumal, Rylan, and Terence L. van Zyl. "Surrogate assisted methods for the parameterisation of agent-based models." 2020 7th International conference on soft computing & machine intelligence (ISCMI). IEEE, 2020.
+
+[6] Influenza_spatial: A spatial model for the spread of influenza [Online]. – URL: https://github.com/vnleonenko/Influenza_spatial (accessed: 15.01.2022).
+
+[7] Li M. Y. An introduction to mathematical modeling of infectious diseases. – Cham : Springer, 2018. – Vol. 2. – P. 34.
+
+[8] Manik S. et al. Impact of climate on COVID-19 transmission: A study over Indian states //Environmental Research. – 2022. – Vol. 211. – P. 113110.
+
 
