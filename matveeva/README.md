@@ -1,5 +1,7 @@
 ## Application of Gaussian process regression as a surrogate modeling method to assess the dynamics of COVID-19 propagation
 
+In this project we demonstrate the possibility of using Gaussian Process Regression as a surrogate modeling method to assess the dynamics of COVID-19 propagation. The models were trained on data obtained by multiple launches of SEIRD and ABM models.
+
 ### Gaussian Process Regression
 
 Gaussian Process Regression (GPR) is used as a surrogate to minimize the time costs of the agent-based model, as well as to demonstrate the possibility of estimating the dynamics of COVID-19 propagation with different sets of input parameters.
@@ -87,6 +89,12 @@ Multiagent models, also known as agent-based models (ABM), have some limitations
 In this work an agent-based framework from [6] was used. The basic principle of simulation is as follows: each agent in the population potentially interacts with other agents if they attend the same school (for schoolchildren), workplace (for working age adults), or lives in the same household. The infectivity of each agent depends on their day of infection [4]. The modeling step of this model is equal to one day. Agents are randomly selected from the general population and are assigned an infectious status at the beginning of the simulation. Step by step algorithm is described in [4].
 The main input parameters of the model which are important for uncertainty and sensitivity analysis are introduced in Table 1.
 
+Table 1. Model parameters.
+| Parameter name        | Description           |
+| ------------- |:-------------:|
+| $\alpha$     | Fraction of non-immune individuals in general population |
+| $\lambda$      | Infection transmission coefficient      |
+| $I_0$  | Initial number of infected individuals      |
 
 ### References
 [1] Sankaran, Sethuraman, and Alison L. Marsden. (2011) "A stochastic collocation method for uncertainty quantification and propagation in cardiovascular simulations." Journal of biomechanical engineering 133(3).
