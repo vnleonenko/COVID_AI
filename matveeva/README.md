@@ -2,6 +2,28 @@
 
 In this project we demonstrate the possibility of using Gaussian Process Regression as a surrogate modeling method to assess the dynamics of COVID-19 propagation. The models were trained on data obtained by multiple launches of SEIRD and ABM models.
 
+### Data
+
+#### Sampling
+
+Files to be used in sampling algorithms is available for for download in the repository: https://github.com/vnleonenko/Influenza_spatial
+
+#### ABM
+
+**params_res_example.csv** - a set of test parameters
+
+**gpr_ABM_RQ_2.pkl** - a model for predicting dynamics of COVID-19 propagation (Rational Quadratic (RQ) kernel)
+
+**gpr_ABM_ADD_2.pkl** a model for predicting dynamics of COVID-19 propagation (Additive kernel (combination of RQ and RBF))
+
+#### SEIRD
+
+**params_example.csv** - a set of test parameters
+
+**example.ipynb** contains usage example
+
+####
+
 ### Gaussian Process Regression
 
 Gaussian Process Regression (GPR) is used as a surrogate to minimize the time costs of the agent-based model, as well as to demonstrate the possibility of estimating the dynamics of COVID-19 propagation with different sets of input parameters.
