@@ -6,7 +6,7 @@ In this project we demonstrate the possibility of using Gaussian Process Regress
 
 #### Sampling
 
-Files to be used in sampling algorithms is available for for download in the repository: https://github.com/vnleonenko/Influenza_spatial
+Files to be used in sampling algorithms is available for download in the repository: https://github.com/vnleonenko/Influenza_spatial
 
 #### ABM
 
