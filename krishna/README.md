@@ -9,33 +9,28 @@ To put the model to the test, we employed two separate datasets. One file has da
 ### Saint Petersburg 
 The data file "spb.combined.daily.txt" forms of COVID-19 pandemic records from St. Petersburg, Russia. As of 2022-03-17, this file has daily numbers of covid-19 data [1].
 The data file contains tab-delimited values for:
-• "TIME" : text string in YYYY-MM-DD format;
-• "CONFIRMED" : integer, number of confirmed COVID-19 cases for a given day;
-• "RECOVERED" : integer, number of recovered for a given day;
-• "DEATHS" : integer, number of deaths for a given day;
-• "ACTIVE" : integer, number of active cases (derived from cumulative CONFIRMED - (cumulative RECOVERED + cumulative DEATHS)) for a given day;
-• "CONFIRMED.spb" : integer, number of confirmed cases according to the City Council for a given day;
-• "HOSPITALIZED.today" : integer, number of hospitaized for a given day;
-• "PCR.tested" : integer, number of PCR-tests performed for a given day;
-• "v1.CS" : integer, number of vaccines administered (1st dose), cumulated sum to date;
-• "v2.CS" : integer, number of vaccines administered (2nd dose), cumulated sum to date;
-• "Yandex.ACTIVITY.points" : numeric, Yandex overall activity point for a given day;
+* "TIME" : text string in YYYY-MM-DD format;
+* "CONFIRMED" : integer, number of confirmed COVID-19 cases for a given day;
+* "RECOVERED" : integer, number of recovered for a given day;
+* "DEATHS" : integer, number of deaths for a given day;
+* "ACTIVE" : integer, number of active cases (derived from cumulative CONFIRMED - (cumulative RECOVERED + cumulative DEATHS)) for a given day;
+* "CONFIRMED.spb" : integer, number of confirmed cases according to the City Council for a given day;
+* "HOSPITALIZED.today" : integer, number of hospitaized for a given day;
+* "PCR.tested" : integer, number of PCR-tests performed for a given day;
+* "v1.CS" : integer, number of vaccines administered (1st dose), cumulated sum to date;
+* "v2.CS" : integer, number of vaccines administered (2nd dose), cumulated sum to date;
+* "Yandex.ACTIVITY.points" : numeric, Yandex overall activity point for a given day;
 
 ### World
 The data file "worldometer_coronavirus_daily_data.csv" contains daily numbers of covid-19 data for each of the 225 countries. From 2020-2-15 to 2022-05-14, all countries have records (820 days per country). With the exception of China, which has data dating from 2020-1-22 to 2022-05-14 (844 days per nation), and Palau, which has records dating from 2021-8-25 to 2022-05-14 (844 days per country) (263 days per country) [2].
 The data contains comma separated values for:
-• "date": Date of observation of the row’s data in YYYY-MM-DD
-format.
-• "country": Country in which the the row’s data was observed.
-• "cumulative total cases": integer, Cumulative number of confirmed cases as of the row’s date, for the row’s country.
-• "daily new cases": integer, daily new number of confirmed cases on
-the row’s date, for the row’s country.
-• "active cases": integer, Number of active cases (i.e., confirmed cases
-that still didn’t recover nor die) on the row’s date, for the row’s country.
-• "cumulative total deaths": integer, Cumulative number of confirmed
-deaths as of the row’s date, for the row’s country.
-• "daily new deaths": integer, daily new number of confirmed deaths on
-the row’s date, for the row’s country.
+* "date": Date of observation of the row’s data in YYYY-MM-DD format.
+* "country": Country in which the the row’s data was observed.
+* "cumulative total cases": integer, Cumulative number of confirmed cases as of the row’s date, for the row’s country.
+* "daily new cases": integer, daily new number of confirmed cases on the row’s date, for the row’s country.
+* "active cases": integer, Number of active cases (i.e., confirmed cases that still didn’t recover nor die) on the row’s date, for the row’s country.
+* "cumulative total deaths": integer, Cumulative number of confirmed deaths as of the row’s date, for the row’s country.
+* "daily new deaths": integer, daily new number of confirmed deaths on the row’s date, for the row’s country.
 
 
 ## Setup
