@@ -52,12 +52,15 @@ The notebook "Multiple covid phases SPB.ipynb" contains the proposed determinist
 [1] Kouprianov, Alexei. — COVID-19.SPb. Coronavirus epidemics in St.
 Petersburg, Russia: data and scripts, 2022. — data and R code.
 https://github.com/alexei-kouprianov/COVID-19.SPb.
+
 [2]ASSAKER, JOSEPH. — Covid-19 Global Dataset, 2022.
 https://www.kaggle.com/datasets/josephassaker/covid19-globaldataset?select=worldometer_coronavirus_ daily_data.csv.
+
 [3] Miles, Paul R. pymcmcstat: A Python Package for Bayesian Inference Using
 Delayed Rejection Adaptive Metropolis / Paul R. Miles // Journal of Open Source
 Software. — 2019. — Vol. 4, no. 38. — P. 1417. https://doi.org/10.21105/joss.
 01417.
+
 [4] pymcmcstat package, url = https://pymcmcstat.readthedocs.io/en/latest/pymcmcstat.hturldate = 2018.
 
 
