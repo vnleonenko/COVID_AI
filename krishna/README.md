@@ -10,11 +10,8 @@ To put the model to the test, we employed two separate datasets. One file has da
 The data file "spb.combined.daily.txt" forms of COVID-19 pandemic records from St. Petersburg, Russia. As of 2022-03-17, this file has daily numbers of covid-19 data [1].
 The data file contains tab-delimited values for:
 • "TIME" : text string in YYYY-MM-DD format;
-
 • "CONFIRMED" : integer, number of confirmed COVID-19 cases for a given day;
-
 • "RECOVERED" : integer, number of recovered for a given day;
-
 • "DEATHS" : integer, number of deaths for a given day;
 • "ACTIVE" : integer, number of active cases (derived from cumulative CONFIRMED - (cumulative RECOVERED + cumulative DEATHS)) for a given day;
 • "CONFIRMED.spb" : integer, number of confirmed cases according to the City Council for a given day;
