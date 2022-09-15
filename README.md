@@ -18,7 +18,7 @@ The notebook "Multiple covid phases SPB.ipynb" contains the proposed determinist
 
 PINN_calibration - includes algorithms for model calibration using PINN approach.
 
-Thу module is an implementation of physics-informed neural network approach for SEIR compartment model calibration. It contains neural network abstraction and usage example. Physics-informed neural network (PINN) [1] is a neural network which is trained to solve supervised learning tasks respecting physics laws described by general nonlinear partial differential equations. Partial differential equations usage is facilitating the learning algorithm to capture the right solution even with a low amount of training examples. The network then seeks to minimize the mean squared error of the loss function by utilizing Adam optimization method used in conjunction with PyTorch software. The test file is named example.ipynb.
+Thу module is an implementation of physics-informed neural network approach for SEIR compartment model calibration. It contains neural network abstraction and usage example. Physics-informed neural network (PINN) is a neural network which is trained to solve supervised learning tasks respecting physics laws described by general nonlinear partial differential equations. Partial differential equations usage is facilitating the learning algorithm to capture the right solution even with a low amount of training examples. The network then seeks to minimize the mean squared error of the loss function by utilizing Adam optimization method used in conjunction with PyTorch software. The test file is named example.ipynb.
 
 Surrogate modeling - contains scripts for surrogate modeling of compartmental and multiagent models.
 
