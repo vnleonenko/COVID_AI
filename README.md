@@ -2,6 +2,8 @@
 
 Libraries for COVID-19 modeling by means of coupling the classical approaches with AI algorithms.
 
+The detailed description of each algorithm along with the examples is placed into the folders, please check corresponding readme files for more information.
+
 Short description of folders:
 
 Data preparation - includes the script for restoring data on disease incidence from several sources. 
